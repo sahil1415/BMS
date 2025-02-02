@@ -12,7 +12,7 @@ import java.util.UUID;
 public class CustomerDatabase {
     private final ArrayList<Customer> customers;
 
-    public CustomerDatabase(ArrayList<Customer> customers){
+    public CustomerDatabase(){
         this.customers = new ArrayList<>();
     }
 

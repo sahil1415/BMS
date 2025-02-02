@@ -12,6 +12,10 @@ import java.util.UUID;
 public class TransactionManagement {
     CustomerDatabase cus;
 
+    public TransactionManagement(CustomerDatabase cus){
+        this.cus = cus;
+    }
+
     public void send_Money(int id1, String name1, UUID account1, int id2, String name2, UUID account2, int money){
         Customer c1 = cus.search_Customer(id1, name1, account1);
         Customer c2 = cus.search_Customer(id2, name2, account2);
@@ -44,5 +48,8 @@ public class TransactionManagement {
         else{
             System.out.println("Account number not found");
         }
+    }
+    public void check_Balance(){
+        System.out.println("Under Development");
     }
 }

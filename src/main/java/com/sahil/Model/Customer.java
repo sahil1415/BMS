@@ -12,7 +12,7 @@ public class Customer extends User{
     private final UUID account_Number;
     private int account_Balance;
     public int loan_amount = 0;
-    public Customer(int user_Id, String user_Name, int user_Age, String customer_Address, UUID account_Number, int account_Balance) {
+    public Customer(int user_Id, String user_Name, int user_Age, String customer_Address, int account_Balance) {
         super(user_Id, user_Name, user_Age);
         this.customer_Address = customer_Address;
         this.account_Number = UUID.randomUUID();

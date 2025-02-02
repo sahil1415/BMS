@@ -13,8 +13,8 @@ public class LoanDatabase {
     private final ArrayList<Customer> loan_holders;
     private CustomerDatabase cu;
 
-    public LoanDatabase(ArrayList<Customer> loan_holders){
-        this.loan_holders = loan_holders;
+    public LoanDatabase(){
+        this.loan_holders = new ArrayList<>();
     }
 
     public void take_Loan(int u_id, String u_name, UUID account_Number, int loan_amount){

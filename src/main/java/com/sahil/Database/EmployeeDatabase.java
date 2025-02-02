@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class EmployeeDatabase {
     private final ArrayList<Employee> employees;
 
-    public EmployeeDatabase(ArrayList<Employee> employees){
+    public EmployeeDatabase(){
         this.employees = new ArrayList<>();
     }
 
